@@ -1,0 +1,41 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "eslint": "^5.11.1",
+    "flow-bin": "^0.100.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "flow": "flow",
+    "start": "react-scripts start && npm flow && npm lint && webpack --config webpack.config.js",
+    "build": "react-scripts build && webpack --config webpack.config.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "node_modules/.bin/eslint \"src/**\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-command": "^0.4.2"
+  }
+}
